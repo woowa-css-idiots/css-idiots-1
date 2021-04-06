@@ -1,4 +1,23 @@
-<img width="330" alt="cssIdiotLogo" src="https://user-images.githubusercontent.com/48755175/113688906-b4910b80-9704-11eb-81cc-dcd042a17050.png">
+
+
+
+
+<p align="middle" >
+  <img width="330" alt="cssIdiotLogo" src="https://user-images.githubusercontent.com/48755175/113688906-b4910b80-9704-11eb-81cc-dcd042a17050.png">
+</p>
+<h2 align="middle">CSS IDIOTS 1기</h2>
+<p align="middle">CSS 1도 모르는 사람들이 1을 알아가는 과정</p>
+<p align="middle">
+<img src="https://img.shields.io/badge/version-1.0.0-blue?style=flat-square" alt="template version"/>
+<img src="https://img.shields.io/badge/language-html-red.svg?style=flat-square"/>
+<img src="https://img.shields.io/badge/language-css-blue.svg?style=flat-square"/>
+<img src="https://img.shields.io/badge/language-js-yellow.svg?style=flat-square"/>
+<a href="https://github.com/daybrush/moveable/blob/master/LICENSE" target="_blank">
+  <img src="https://img.shields.io/github/license/daybrush/moveable.svg?style=flat-square&label=license&color=08CE5D"/>
+  </a>
+</p>
+<br/>
+<br/>
 
 
 ## 👏 개인 학습 정리
