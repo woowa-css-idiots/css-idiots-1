@@ -1,3 +1,6 @@
+<img width="330" alt="cssIdiotLogo" src="https://user-images.githubusercontent.com/48755175/113688906-b4910b80-9704-11eb-81cc-dcd042a17050.png">
+
+
 ## 👏 개인 학습 정리
 
 [미키(권세진)](./0307kwon/readme.md)
