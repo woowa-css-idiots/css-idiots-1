@@ -1,0 +1,127 @@
+body {
+  min-width: 1000px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+.header__top > ul {
+  margin: 0 60px 10px 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.header__top > ul > li {
+  padding-right: 10px;
+  font-size: x-small;
+}
+
+.header__top__text-bar {
+  display: inline-block;
+  width: 1px;
+  height: 7px;
+  margin: 0 0 0 10px;
+  color: black;
+  background: #ddd;
+  vertical-align: 0px;
+}
+
+.header__top__cart-count {
+  margin-left: 3px;
+  color: #29c1bc;
+}
+
+.header__middle {
+  border-top: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.header__middle__logo-image {
+  width: 150px;
+  height: 70px;
+  padding-top: 20px;
+}
+
+.header__middle__search {
+  display: flex;
+  position: absolute;
+  right: 0;
+  font-size: x-small;
+  transform: translate(0, -50%, 0);
+  margin-right: 60px;
+}
+
+.header__middle__search > input {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.header__middle__search > input::placeholder {
+  color: gray;
+  font-size: x-small;
+}
+
+.header__menu > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.header__menu > ul > li {
+  padding: 0 15px 0 15px;
+  font-size: 11px;
+}
+
+.header__menu > ul > li > a {
+  color: #333;
+}
+
+.main__banner__main-image {
+  width: 100%;
+  height: 300px;
+}
+
+.main__goods__top-seller {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__goods__top-seller__title {
+  font-weight: bold;
+  margin-left: 100px;
+}
+
+.main__goods__top-seller__item-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.main__goods__top-seller__item-wrapper {
+  display: flex;
+}
+
+.main__goods__top-seller__single-item {
+  list-style-type: none;
+  margin: 0 10px 0 10px;
+}
+
+.main__goods__top-seller__item-image {
+  width: 200px;
+  height: 200px;
+}
