@@ -68,7 +68,7 @@
 
   https://store.baemin.com/main/index.php
 
-  https://collectui.com/challenges/checkout
+  https://collectui.com/challenges
 
   https://www.dailyui.co/
 
@@ -78,7 +78,7 @@
 
 1. `studyResult 폴더` 에 `날짜_내용` 이름의 폴더로 나눠서 정리.
 
-   ex) `2021_04_06_BAEMIN_MUNBANGU`
+   ex) `2021_04_06_baemin_mart`
 
 2. 다른 사람이 볼 수 있도록 코드펜에도 올리기.
 
