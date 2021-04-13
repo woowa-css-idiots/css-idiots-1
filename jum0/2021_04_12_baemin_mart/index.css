@@ -1,0 +1,137 @@
+/* @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+body {
+  font-family: "Noto Sans KR", sans-serif !important;
+} */
+
+body ul {
+  padding: 0px; /* 공부 */
+}
+
+ul {
+  list-style: none; /* 점 없애기 */
+}
+
+li {
+  float: left; /* li들을 가로로 */
+}
+
+._header-1 {
+  height: 50px;
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+._header-1-sub {
+  width: 1080px;
+  height: 49px; /* 왜 1px 까는걸까? */
+  margin: 0px auto; /* margin 부분이랑 auto 공부 */
+  display: flex; /* flex 공부 */
+  justify-content: space-between; /* 공부 */
+  align-items: center;
+}
+
+._header-1-left-menu {
+  color: rgb(187, 187, 187);
+}
+
+._header-1-right-menu {
+  color: rgb(136, 136, 136);
+}
+
+._header-1-item {
+  font-size: 12px;
+  padding: 0px 10px;
+}
+
+/* ::after 공부 */
+._header-1-item::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: -1px;
+  width: 1px;
+  height: 9px;
+  border-right: 1px solid rgb(221, 221, 221);
+}
+
+._header-2 {
+  height: 80px;
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+._header-2-sub {
+  width: 1080px;
+  height: 79px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+._header-2-left-menu {
+  width: 40%;
+}
+
+._header-2-left-item:first-child {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(115, 103, 92);
+  margin-right: 16.5px;
+  padding-right: 16.5px;
+}
+
+._header-2-left-item:first-child::before {
+  background-size: 20px;
+  /* background-image: url("images/header_category.png") no-repeat; */
+}
+
+._header-2-left-item {
+  font-size: 14px;
+  color: rgb(136, 136, 136);
+  font-weight: 500;
+  padding-right: 10px;
+}
+
+._header-2-center {
+  width: 20%;
+  text-align: center;
+}
+
+._header-2-center-image {
+  width: 103px;
+}
+
+._header-2-right-menu {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end; /* 공부 */
+}
+
+._header-2-right-item {
+  font-size: 10px;
+}
+
+._header-2-right-item-button {
+  background-color: white;
+  border: none;
+  outline: none;
+}
+
+._header-2-right-item-button-image {
+  width: 20px;
+}
+
+._deundeun-header {
+  padding-top: 36px;
+}
+
+._deundeun-header-main-title {
+  margin: 0px 8px 0px 0px;
+  color: rgb(51, 51, 51);
+}
+
+._deundeun-header-sub-title {
+  margin: 4px 0px 0px;
+  color: rgb(136, 136, 136);
+  font-size: 15px;
+  font-weight: 500;
+}
