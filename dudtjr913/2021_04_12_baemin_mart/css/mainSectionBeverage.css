@@ -1,0 +1,52 @@
+.main__section-beverage-bg-wrapper {
+  position: relative;
+}
+
+.main__section-beverage-wrapper {
+  position: absolute;
+  bottom: -2rem;
+  left: 2rem;
+  width: 28rem;
+  background-color: white;
+  padding: 1rem;
+}
+
+.main__section-beverage-image-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__section-beverage-description {
+  font-size: 1.3rem;
+}
+
+.main__section-beverage-product-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  padding: 0 3rem;
+}
+
+.main__section-beverage-product-item {
+  display: flex;
+  position: relative;
+  margin-bottom: 1rem;
+  width: 25rem;
+  margin-right: 2.5rem;
+  cursor: pointer;
+}
+
+.main__section-beverage-product-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.main__section-beverage-product-image-wrapper {
+  width: 6rem;
+  margin-right: 1rem;
+  overflow: hidden;
+}
+
+.main__section-beverage-product-image {
+  width: 100%;
+}

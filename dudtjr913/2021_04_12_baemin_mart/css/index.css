@@ -1,10 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+@import './mainSectionBg.css';
+@import './mainSectionBeverage.css';
+@import './mainSectionAD.css';
+@import './footer.css';
+@import './modules/index.css';
+@import './recentShowing.css';
 
 body {
   font-family: 'Noto Sans KR', sans-serif;
   margin: 0;
   color: rgb(51, 51, 51);
   letter-spacing: -0.5px;
+}
+
+p {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  border: none;
 }
 
 a {
@@ -85,7 +104,10 @@ li {
 }
 
 .header__top-list li::after,
-.header__bottom-list li::after {
+.header__bottom-list li::after,
+.footer__notice-item::after,
+.footer__bottom-service-open::after,
+.footer__bottom-description span:first-child::after {
   content: '';
   position: absolute;
   background-color: rgb(187, 187, 187);
@@ -97,7 +119,8 @@ li {
 }
 
 .header__top-list li:last-child::after,
-.header__bottom-list.left li:last-child:after {
+.header__bottom-list.left li:last-child:after,
+.footer__notice-item:last-child::after {
   content: none;
 }
 
@@ -226,7 +249,12 @@ li {
 }
 
 .main__section {
-  padding: 1rem 4rem;
+  padding: 0 4rem;
+  margin-top: 2.5rem;
+}
+
+.main__section:nth-last-child(2) {
+  padding-bottom: 1.5rem;
 }
 
 .main__section-title-wrapper {
@@ -236,7 +264,7 @@ li {
 
 .main__section-title {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .main__section-description {
@@ -258,7 +286,6 @@ li {
 .main__section-list {
   display: flex;
   flex-wrap: wrap;
-  border-bottom: 1px solid rgb(221, 218, 218);
 }
 
 .main__section-item {
@@ -272,11 +299,21 @@ li {
   margin-bottom: 2.5rem;
 }
 
-.main__section-item:hover .main__section-item-image {
+.main__section-item:nth-last-child(-n + 6) {
+  margin-bottom: 0rem;
+}
+
+/* main__section-item-image이 같은데 같은 것을 중복하지 않고 처리하는 방법이 있을까? */
+.main__section-item:hover .main__section-item-image,
+.main__section-bg-image-item:hover .main__section-item-image,
+.main__section-beverage-product-item:hover .main__section-item-image,
+.main__section-ad-bg-wrapper:hover .main__section-item-image,
+.main__section-ad-image-wrapper:hover .main__section-item-image {
   transform: scale(1.05);
 }
 
-.main__section-item:hover .main__section-item-title {
+.main__section-item:hover .main__section-item-title,
+.main__section-beverage-product-item:hover .main__section-item-title {
   text-decoration: underline;
 }
 
@@ -290,7 +327,6 @@ li {
 }
 
 .main__section-item-image {
-  overflow: hidden;
   width: 100%;
   transition: transform ease 0.3s;
 }
@@ -304,11 +340,18 @@ li {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
+.main__section-item-description-wrapper {
+  padding: 0px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .main__section-item-title {
   font-size: 14px;
   margin-bottom: 3px;
   overflow: hidden;
-  height: 36px;
+  max-height: 36px;
   line-height: 18px;
   font-weight: 500;
 }
@@ -339,6 +382,7 @@ li {
   position: absolute;
   display: inline-block;
   top: 0;
+  left: 0;
   background-color: rgb(255, 55, 55);
   color: white;
   padding: 1px 6px;
@@ -357,5 +401,17 @@ li {
   font-size: 14px;
   text-decoration: line-through;
   font-weight: 700;
-  margin-right: 15px;
+}
+
+.main__section-hr {
+  border: none;
+  height: 2px;
+  background-color: rgb(246, 246, 246);
+  margin: 2.5rem 0 0 0;
+}
+
+.main__section-ad-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
 }
