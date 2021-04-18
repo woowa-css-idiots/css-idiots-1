@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>배민상회</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Noto+Sans+KR">
     <link rel="stylesheet" href="./index.css" />
     <script
       src="https://kit.fontawesome.com/8d486f85cb.js"
@@ -83,14 +85,54 @@
         </div>
       </div>
     </header>
+
+    <div class="shopping-cart-container d-flex f-direction-column">
+      <p class="shopping-cart-container__title">최근 본 상품</p>
+      <p class="shopping-cart-container__number">3</p>
+      <div class="shopping-cart d-flex f-direction-column">
+        <button class="shopping-cart__up-button">
+          <i class="fas fa-chevron-up"></i>
+        </button>
+        <div class="shopping-cart__item-list h-100">
+          <div class="shopping-cart__item">
+            <img class="shopping-cart__item-img" src="./images/goods1.jpg" />
+            <div class="shopping-cart__item-cover"></div>
+          </div>
+          <div class="shopping-cart__item">
+            <img class="shopping-cart__item-img" src="./images/goods2.jpg" />
+            <div class="shopping-cart__item-cover"></div>
+          </div>
+          <div class="shopping-cart__item">
+            <img class="shopping-cart__item-img" src="./images/goods3.jpg" />
+            <div class="shopping-cart__item-cover"></div>
+          </div>
+        </div>
+        <button class="shopping-cart__down-button">
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </div>
+      <button class="shopping-cart__top-move-button">
+        TOP
+      </button>
+    </div>
+
     <main>
       <div class="main-banner">
         <button class="main-banner__button">
           <img src="./images/main-banner.jpg" />
         </button>
+        <button class="main-banner__left-button">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="main-banner__right-button">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="main-banner__description">
+          <span>3/10</span>
+        </div>
       </div>
       <div class="main max-width">
-        <div class="goods-container">
+        <div class="container">
           <div class="mb-8">
             <h3>든든배송 BEST</h3>
             <p style="font-weight: bold;">냉동탑차로 정확하고 빠르게 받아보세요</p>
@@ -410,45 +452,185 @@
                   <img src="./images/deun-deun-deliver.png" />
                 </div>
               </div>
-            </section>
-
-            <section>
-              <div class="goods">
-                <div class="goods-top p-relative mb-8">
-                  <img class="goods-top__image" src="./images/goods3.jpg" />
-                  <div class="goods-top__discount">5%</div>
-                  <div class="goods-top__cover" > <!-- 여기 왜 cover를 씌울까...? -->
-                  </div>
-                </div>
-
-                <div>
-                  <h4 class="goods__description">[든든] 쫄깃 치즈볼(25g*30입) 5개</h4>
-                  <p>1kg 당 8,778원 / 5ea</p>
-                  <p class="goods__price"><span class="discounted-price">43,890원</span><span class="original-price">46,200원</span></p>
-                  <img src="./images/deun-deun-deliver.png" />
-                </div>
-              </div>
-            </section>
-
-            <section>
-              <div class="goods">
-                <div class="goods-top p-relative mb-8">
-                  <img class="goods-top__image" src="./images/goods4.jpg" />
-                  <div class="goods-top__cover" > <!-- 여기 왜 cover를 씌울까...? -->
-                  </div>
-                </div>
-                
-                <div>
-                  <h4 class="goods__description">[든든] 닭껍질 튀김 1kg 8개</h4>
-                  <p>1kg 당 5,388원 / 8ea</p>
-                  <p class="goods__price">43,100원</p>
-                  <img src="./images/deun-deun-deliver.png" />
-                </div>
-              </div>
-            </section>
+            </section> <!-- article도 괜찮나...? 어떻게 해야하지 -->
           </div>
         </div>
+        
+        <section class="container"> <!-- 시멘틱 태그 아직 감이 안온다...-->
+          <div class="drink-banner">
+            <img src="images/drink-banner.jpg"/>
+            <div class="drink-description">
+              <div>
+                <h3>세상을 뒤흔들 음료?!</h3>
+                <p>특별한 트렌드 메뉴를 런칭하세요</p>
+              </div>
+            </div>
+          </div>
+          <div class="drink-list">
+
+            <div class="drink-item d-flex">
+              <div class="drink-item__img">
+                <img src="./images/drink1.jpg" />
+                <div class="goods-top__discount">9%</div>
+              </div>
+              <div class="drink-item__description">
+                <h4>[든든] 음료?! 파라떼 시럽 1kg</h4>
+                <p >개당 590원 / 10ea</p>
+                <p class="goods__price">
+                  <span class="discounted-price">5,900원</span>
+                  <span class="original-price">6,500원</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="drink-item d-flex">
+              <div class="drink-item__img">
+                <img src="./images/drink2.jpg" />
+                <div class="goods-top__discount">11%</div>
+              </div>
+              <div class="drink-item__description">
+                <h4>[든든] 음료?! 와사비라떼 시럽 1kg</h4>
+                <p >개당 7,900원 / 1ea</p>
+                <p class="goods__price">
+                  <span class="discounted-price">7,900원</span>
+                  <span class="original-price">8,900원</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="drink-item d-flex">
+              <div class="drink-item__img">
+                <img src="./images/drink3.jpg" />
+                <div class="goods-top__discount">11%</div>
+              </div>
+              <div class="drink-item__description">
+                <h4>[든든] 음료?! 페인트라떼 딸기맛 시럽 1kg</h4>
+                <p >개당 8,900원 / 1ea</p>
+                <p class="goods__price">
+                  <span class="discounted-price">8,900원</span>
+                  <span class="original-price">10,000원</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="drink-item d-flex">
+              <div class="drink-item__img">
+                <img src="./images/drink4.jpg" />
+                <div class="goods-top__discount">12%</div>
+              </div>
+              <div class="drink-item__description">
+                <h4>[든든] 음료?! 패션후르츠에이드 시럽 1kg</h4>
+                <p >개당 6,900원 / 1ea</p>
+                <p class="goods__price">
+                  <span class="discounted-price">6,900원</span>
+                  <span class="original-price">7,900원</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="drink-item d-flex">
+              <div class="drink-item__img">
+                <img src="./images/drink5.jpg" />
+                <div class="goods-top__discount">12%</div>
+              </div>
+              <div class="drink-item__description">
+                <h4>[든든] 음료?! 솔향시럽 1kg</h4>
+                <p >개당 6,900원 / 1ea</p>
+                <p class="goods__price">
+                  <span class="discounted-price">6,900원</span>
+                  <span class="original-price">7,900원</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="drink-item d-flex">
+              <div class="drink-item__img">
+                <img src="./images/drink6.jpg" />
+                <div class="goods-top__discount">12%</div>
+              </div>
+              <div class="drink-item__description">
+                <h4>[든든] 음료?! 고수향시럽 1kg</h4>
+                <p >개당 6,900원 / 1ea</p>
+                <p class="goods__price">
+                  <span class="discounted-price">6,900원</span>
+                  <span class="original-price">7,900원</span>
+                </p>
+              </div>
+            </div>
+        </div>
+
       </div>
     </main>
+    <footer class="footer">
+
+      <section class="footer-nav-container d-flex justify-center">
+        <div class="footer-nav min-width">
+          <ul class="d-flex">
+            <li>
+              공지사항
+            </li>
+            <li>
+              배민상회 이용약관
+            </li>
+            <li>
+              사장님광장 이용약관
+            </li>
+            <li>
+              전자금융거래 이용약관
+            </li>
+            <li class="bold">
+              개인정보처리방침
+            </li>
+            <li class="bold">
+              소비자중심경영
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="corp-description-container d-flex justify-center">
+        <div class="corp-description d-flex min-width">
+          <section class="corp-description__left w-100">
+            <p class="corp-description__left-p">
+              <span>대표이사:김봉진,김범준</span>
+              <span>주소 : 서울특별시 송파구 위례성대로 2 장은빌딩 18층</span>
+            </p>
+            <p class="corp-description__left-p">
+              <span>사업자등록번호 : 120-87-65763</span>
+              <span>통신판매업신고번호 : <a href="">2012-서울송파-0515</a></span>
+            </p>
+            <p class="corp-description__left-p">
+              <span>팩스 : 02-532-5854</span>
+              <span>이메일 : baemin_mart@woowahan.com</span>
+            </p>
+            <br>
+            <p>
+              상호명:<span class="bold color-semi-black">(주)우아한형제들</span>
+            </p>
+          </section>
+
+          <section class="corp-description__right w-100 d-flex">
+            <div class="corp-description__right-insurance">
+              <p class="bold color-semi-black">하나은행 채무지급보증 안내</p>
+              <p>당사는 고객님이 현금 결제한 금액에 대해 하나은행과 채무지급보증 계약을 체결하여 안전거래를 보장하고 있습니다.</p>
+              <a href="/" class="color-semi-black">서비스 가입사실 확인</a>
+            </div>
+            <div class="corp-description__right-tel">
+              <p class="bold color-semi-black">배민상회 고객센터</p>
+              <h3>1600 - 4949</h3>
+              <p class="corp-description__left-p">
+                <span>평 &nbsp 일</span>
+                <span>09:00~19:00</span>
+              </p>
+              <p class="corp-description__left-p">
+                <span>토요일</span>
+                <span>09:00~16:00</span>
+              </p>
+              <p>일요일 및 공휴일은 휴무입니다.</p>
+            </div>
+          </section>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
