@@ -10,3 +10,5 @@
 ### 배민 상회 (2021-04-12)
 
 - [미키](https://woowa-css-idiots.github.io/css-idiots-1/0307kwon/2021_04_12_baemin_mart/)
+- [디토](https://dudtjr913.github.io/css-idiots-1/dudtjr913/2021_04_12_baemin_mart/)
+- [신세한탄](https://shinsehantan.github.io/css-idiots-1/shinsehantan/2021_04_12_baemin_mart/)
