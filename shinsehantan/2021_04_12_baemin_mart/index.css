@@ -1,0 +1,524 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+
+body {
+  /* width: 100%; */
+  min-width: 1080px;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 48px;
+  /* background-color: gray; */
+  background-color: rgb(246, 246, 246);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: gray;
+}
+
+header {
+  position: relative;
+  background-color: white;
+  /* top: -10px; */
+}
+
+.header__top-banner-button {
+  position: relative;
+  border-style: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100px;
+  text-size-adjust: 100%;
+  overflow: hidden;
+}
+
+.main__banner {
+  position: relative;
+}
+
+.main__banner-icon {
+  position: absolute;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+  z-index: 1;
+}
+
+.main__banner .main__banner-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.main__banner-icon .before-icon {
+  transform: rotate(-90deg);
+  left: 1rem;
+}
+
+.main__banner-icon .after-icon {
+  position: absolute;
+  bottom: 10%;
+  right: 1rem;
+}
+
+.main__banner-page-count {
+  position: absolute;
+  bottom: 10%;
+  right: 20px;
+  border-radius: 5rem;
+  width: 80px;
+  height: 40px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.header__top-banner {
+  margin: 0;
+}
+
+.header__top-banner-button {
+  width: 100vw;
+  height: 50px;
+  background-color: rgb(18, 161, 234);
+}
+
+.header__top-banner-button > img {
+  margin: 0;
+  padding: 0;
+  /* vertical-align: middle; */
+  /* position: absolute;
+  width: 1080px;
+  height: 300px;
+  vertical-align: middle; */
+}
+
+.zoom:hover .main__banner-image {
+  transform: scale(1.1);
+}
+
+.main__banner-image {
+  transition: all 0.3s ease;
+}
+
+.header__top-user-menu {
+  padding: 0 200px;
+  display: flex;
+  justify-content: space-between;
+  font-size: x-small;
+  margin-bottom: 0.5rem;
+}
+
+.empty-space {
+  width: 20px;
+}
+
+.header__baemin-section > ul {
+  display: flex;
+  position: absolute;
+  top: 1;
+}
+
+.header__user-section > ul {
+  display: flex;
+}
+
+.header__baemin-section > ul > li {
+  display: flex;
+  flex-direction: row;
+  margin: 0 5px 0 px;
+}
+
+.header__user-section > ul > li {
+  display: flex;
+  flex-direction: row;
+  margin: 0 5px 0 px;
+}
+
+.text-bar {
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  margin-top: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background: #ddd;
+}
+
+.header__top-logo-section {
+  padding: 10px 200px;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  font-size: x-small;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-logo-section__purchase-category > ul {
+  display: flex;
+}
+
+.top-logo-section__user-category > ul {
+  display: flex;
+}
+
+.top-logo-section__purchase-category > ul > li {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0 5px 0 px;
+}
+
+.top-logo-section__user-category > ul > li {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  list-style: none;
+  /* margin: 0 5px 0 0; */
+}
+
+.hamburger-menu-icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 2px;
+}
+
+.top-logo-section__logo > img {
+  width: 100px;
+  height: 25px;
+}
+
+.top-logo-section__text-bar {
+  height: 20px;
+  margin-top: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background: #ddd;
+}
+
+.main {
+  /* margin: 0; */
+  padding: 0 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_banner.zoom {
+  overflow: hidden;
+  width: 1080px;
+}
+
+.main__banner > img {
+  width: 100%;
+  height: 280px;
+}
+
+.main__goods-section-top {
+  display: flex;
+  /* margin: 30px 20px 10px 20px; */
+}
+
+.main__goods-section-middle {
+  display: flex;
+  position: relative;
+  /* max-width: 400px; */
+  /* margin: 30px 20px 10px 20px; */
+}
+
+.main__goods-category-title {
+  color: black;
+  font-weight: bold;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.main__goods-category-description {
+  display: flex;
+  margin-top: 0.25rem;
+  color: gray;
+  font-size: small;
+}
+
+.main__goods-more-button {
+  display: flex;
+  border: none;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  font-size: x-small;
+  margin-right: 200px;
+  align-items: center;
+}
+
+.main__goods-first-line {
+  /* display: inline-block; */
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 20px 0;
+  width: 100%;
+  justify-content: space-between;
+  /* height: 100vh; */
+}
+
+.single-goods__image {
+  width: 100px;
+  height: 100px;
+}
+
+.single-goods__discount-mark {
+  background-color: red;
+  position: absolute;
+  width: 30px;
+  height: 15px;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+
+.main__single-goods-wrapper {
+  display: flex;
+  flex-direction: column;
+  font-size: x-small;
+  margin: 0 5px 10px 5px;
+  align-items: flex-start;
+}
+
+.single-goods__title {
+  font-size: 14px;
+  margin-bottom: 5px;
+  width: 150px;
+}
+
+.single-goods__price-per-weight {
+  font-size: 11px;
+  color: gray;
+}
+
+.single-goods__price-section,
+.single-goods__price {
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.discount {
+  color: red;
+}
+
+.single-goods__discount-price {
+  margin-left: 3px;
+  text-decoration: line-through;
+  color: lightgrey;
+  font-size: x-small;
+}
+
+.single-goods__optional-mark {
+  margin-left: 0;
+}
+
+footer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: x-small;
+  margin-bottom: 0.5rem;
+}
+
+.footer__policy-section {
+  padding: 0 200px;
+  border-top: 1px solid lightgray;
+}
+
+.policy-section__list-wrapper {
+  display: flex;
+  font-size: small;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.footer__address-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 200px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  border-top: 1px solid lightgray;
+}
+
+.address-section__woowa {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.footer__address-section-left {
+  width: 40%;
+}
+
+.footer__address-section-middle {
+  width: 30%;
+  max-width: 250px;
+}
+
+.footer__address-section-right {
+  width: 10%;
+}
+
+.address-section-right__number {
+  /* font-weight: bold;
+  color: black; */
+  font-size: large;
+}
+
+.latest-watch {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 12rem;
+  right: 3rem;
+  font-size: large;
+  font-weight: 700;
+}
+
+.color-red {
+  color: red;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgrey;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.latest-watch__image-box {
+  width: 70px;
+  height: 220px;
+}
+
+.latest-watch__top-box {
+  width: 70px;
+  height: 20px;
+  text-align: center;
+}
+
+.latest-watch__image-box img {
+  width: 80px;
+  height: 80px;
+}
+
+.border-bottom-gray {
+  border-bottom: 1px solid lightgrey;
+}
+
+.latest-watch__icon {
+  opacity: 0.3;
+}
+
+.main__beverage {
+  width: 100%;
+  position: relative;
+}
+
+.main__beverage-banner {
+  width: 100%;
+}
+
+.main__beverage-text-section {
+  position: absolute;
+  top: 10rem;
+  left: 1rem;
+  border: none;
+  background-color: white;
+  width: 600px;
+  height: 80px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.single-beverage__image {
+  width: 150px;
+  height: 150px;
+  margin-right: 1rem;
+}
+
+.single-beverage__discount-mark {
+  background-color: red;
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+
+.single-beverage__title {
+  font-size: 18px;
+  width: 250px;
+  font-weight: bold;
+}
+
+.single-beverage__price-per-weight {
+  font-size: 18px;
+  color: gray;
+  font-weight: bold;
+}
+
+.single-beverage__price-section,
+.single-beverage__price {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.single-beverage__discount-price {
+  margin-left: 3px;
+  text-decoration: line-through;
+  color: lightgrey;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.single-beverage__optional-mark {
+  margin-left: 0;
+}
+
+.main__beverage-goods-first-section,
+.main__beverage-goods-second-section,
+.main__beverage-goods-third-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.main__beverage-goods-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-right: 5rem;
+}
+
+.main__beverage-goods-section {
+  margin: 3rem 1rem;
+}
+
+.beverage-more-button {
+  right: 0;
+}
