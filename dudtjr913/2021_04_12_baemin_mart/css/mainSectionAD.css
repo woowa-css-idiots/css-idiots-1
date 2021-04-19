@@ -1,0 +1,10 @@
+.main__section-ad {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__section-ad-bg-wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
